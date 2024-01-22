@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=10">
     <title>Legal Solution Resource</title>
+
+    <!-- tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font family -->
+
+    <!-- EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/7fe67149de.js" crossorigin="anonymous"></script>
+
+    <!--tailwind custom colour -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color':'#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .garamond {
+            font-family: 'EB Garamond', serif;
+        }
+
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header class="max-w-6xl mx-auto">
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+                    <img src="images/logo2.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Services <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Cases <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Contact us <i class="fa-solid fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-primary-color text-white">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>
